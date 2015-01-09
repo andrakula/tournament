@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_tournament_domain_Team" modelAttribute="team" path="/teams" render="${empty dependencies}" z="cTU9MfcdF66EENhVmChzc6yiS88=">
+        <field:input field="name" id="c_tournament_domain_Team_name" required="true" z="YU0Nd80e57lJiQncCI/cutgA61s="/>
+        <field:input field="points" id="c_tournament_domain_Team_points" required="true" validationMessageCode="field_invalid_integer" z="oNSGm5rr/cWNA84BCMWpTb3H7aY="/>
+        <field:input field="games" id="c_tournament_domain_Team_games" required="true" validationMessageCode="field_invalid_integer" z="2f/AolYxlmfdqMXle7LMq3SmF+U="/>
+        <field:input field="id" id="c_tournament_domain_Team_id" required="true" validationMessageCode="field_invalid_integer" z="pGUeELyyKird8fGbv21aHHk6CkA="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_tournament_domain_Team" render="${not empty dependencies}" z="Qtsa0BGvakfCHP4+cwwI47ygU3Y="/>
+</div>

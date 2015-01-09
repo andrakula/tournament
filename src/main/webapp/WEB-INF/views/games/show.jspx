@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_tournament_domain_Game" object="${game}" path="/games" z="PEVyBa/NnrSDmcmVOYPt7BjZF/U=">
+        <field:display date="true" dateTimePattern="${game_played_date_format}" field="played" id="s_tournament_domain_Game_played" object="${game}" z="oyPyHrstjjZy5grfvCmGlBStZWs="/>
+        <field:display field="team1" id="s_tournament_domain_Game_team1" object="${game}" z="RD7v1v/fBq65HLUA+z9LtHCCkP4="/>
+        <field:display field="team2" id="s_tournament_domain_Game_team2" object="${game}" z="FkfwYN3iTmsIt/VIT4twA30y0nI="/>
+        <field:display field="goals1" id="s_tournament_domain_Game_goals1" object="${game}" z="9ZPWJcvXNn5keBPiaUi8bpgqu1o="/>
+        <field:display field="goals2" id="s_tournament_domain_Game_goals2" object="${game}" z="0oFL7URATWM2SMsntStDPd4H/0U="/>
+    </page:show>
+</div>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_tournament_domain_Game" items="${games}" z="JfZkssXjLNXWN1YvWmq8raFH53w=">
+        <table:table data="${games}" id="l_tournament_domain_Game" path="/games" z="Us8rUl+iPGM2rbRhhfQz/APv6HY=">
+            <table:column date="true" dateTimePattern="${game_played_date_format}" id="c_tournament_domain_Game_played" property="played" z="jDXUftMotKZSgGihDz9dkHLTosM="/>
+            <table:column id="c_tournament_domain_Game_team1" property="team1" z="mhQGATMuxRIstYbNR7ekARY/cho="/>
+            <table:column id="c_tournament_domain_Game_team2" property="team2" z="N+MCsuAByHGhBqk1YqCyZ+32M3g="/>
+            <table:column id="c_tournament_domain_Game_goals1" property="goals1" z="YIDnxXvt3VQGjONmwn0zaS4D3vk="/>
+            <table:column id="c_tournament_domain_Game_goals2" property="goals2" z="8QoGgeb/HK0ndhqx0oHuWBykoGI="/>
+        </table:table>
+    </page:list>
+</div>

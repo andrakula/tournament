@@ -1,0 +1,109 @@
+<html xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:tiles="http://tiles.apache.org/tags-tiles"
+	xmlns:spring="http://www.springframework.org/tags"
+	xmlns:util="urn:jsptagdir:/WEB-INF/tags/util">
+
+<jsp:output doctype-root-element="HTML"
+	doctype-system="about:legacy-compat" />
+
+<jsp:directive.page contentType="text/html;charset=UTF-8" />
+<jsp:directive.page pageEncoding="UTF-8" />
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+
+<util:load-scripts />
+
+<spring:message code="application_name" var="app_name"
+	htmlEscape="false" />
+<title><spring:message code="welcome_h3" arguments="${app_name}" /></title>
+
+
+<!--  context variable for all js files -->
+<script type="text/javascript">
+	var contextPath = "${pageContext.request.contextPath }";
+</script>
+
+
+<spring:url var="jquery" value="/resources/js/lib/jquery/jquery-1.10.2.min.js" />
+<script type="text/javascript" src="${jquery}">
+//sdfsdfsd
+</script>
+
+<spring:url var="jquery2" value="/resources/js/lib/jquery/jquery-ui-1.10.3.custom.min.js" />
+<script type="text/javascript" src="${jquery2}">
+//xfdfsd
+</script>
+
+<spring:url var="gloca" value="/resources/js/lib/jquery/grid.locale-en.js" />
+<script type="text/javascript" src="${gloca}">
+alert(${gloca});
+</script>
+
+<spring:url var="gmin" value="/resources/js/lib/jquery/jquery.jqGrid.min.js" />
+<script type="text/javascript" src="${gmin}">
+//alert('hui');
+</script>
+
+<spring:url var="jqGridSorter" value="/resources/js/app/jqGridFormatter.js" />
+<script type="text/javascript" src="${jqGridSorter}">
+//pidari
+</script>
+
+<!--  <spring:url var="gsrc" value="/resources/js/lib/jquery/jquery.jqGrid.src.js" />
+<script type="text/javascript" src="${gsrc}">
+//pidari
+</script>
+-->
+
+<spring:url var="tjs" value="/resources/js/app/teams.js" />
+<script type="text/javascript" src="${tjs}">
+//pidari
+</script>
+
+<!-- jqGrid CSS -->
+<spring:url var="gcss" value="/resources/styles/jquery/jqgrid.css" />
+<link rel="stylesheet" href="${gcss}" type="text/css" />
+
+<!-- <add-attribute value="lib/jquery/jquery.blockUI.js" />
+<add-attribute value="lib/jquery/select2.min.js" />
+<add-attribute value="lib/moment.min.js" />
+<add-attribute value="lib/underscore-min.js" />
+<add-attribute value="app/lists/app_lists.js" />
+<add-attribute value="app/camo.utils.js" />
+<add-attribute value="app/teams.js" />
+<add-attribute value="lib/jquery/jquery.qtip.min.js" />
+
+<script type="text/javascript" src="/resources/js/app/common.js" />
+
+<script type="text/javascript"
+	src="/resources/js/lib/jquery/jquery-ui-timepicker-addon.js" />
+<script type="text/javascript"
+	src="/resources/js/lib/jquery/jquery.form.js" />
+<script type="text/javascript"
+	src="/resources/js/lib/jquery/jquery.scrollTo.js" />
+<script type="text/javascript"
+	src="/resources/js/lib/jquery/jquery.ajaxQueue.js" />
+<script type="text/javascript"
+	src="/resources/js/lib/jquery/jquery.camo.tabnav.js" />
+<script type="text/javascript"
+	src="/resources/js/lib/jquery/jquery.notific8.min.js" />
+<script type="text/javascript" src="/resources/js/app/common.js" />
+ -->
+ 
+</head>
+
+<body class="tundra spring">
+	${javaScripts}
+	<div id="wrapper">
+		<tiles:insertAttribute name="header" ignore="true" />
+		<tiles:insertAttribute name="menu" ignore="true" />
+		<div id="main">
+			<tiles:insertAttribute name="body" />
+			<tiles:insertAttribute name="footer" ignore="true" />
+		</div>
+	</div>
+</body>
+</html>

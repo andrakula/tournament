@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_tournament_domain_Game" modelAttribute="game" path="/games" versionField="none" z="E/RT7sZlkJY1Zksw/61EBmq1RrA=">
+        <field:datetime dateTimePattern="${game_played_date_format}" field="played" id="c_tournament_domain_Game_played" required="true" z="fZ69oK8Sxyh/8O3qTPkct1XvnjI="/>
+        <field:select field="team1" id="c_tournament_domain_Game_team1" itemValue="id" items="${teams}" path="/teams" required="true" z="e5YRby6p2c1Y/EgrtJi8TxH0v1U="/>
+        <field:select field="team2" id="c_tournament_domain_Game_team2" itemValue="id" items="${teams}" path="/teams" required="true" z="CAoxw2gQsIIIFo1rJxDP5P1JWp4="/>
+        <field:input field="goals1" id="c_tournament_domain_Game_goals1" required="true" validationMessageCode="field_invalid_integer" z="jNSOO6KDledsRTjQvsLP1lk/mxg="/>
+        <field:input field="goals2" id="c_tournament_domain_Game_goals2" required="true" validationMessageCode="field_invalid_integer" z="FHMgI0A1IbtmitYhmoiM+Ab7pX8="/>
+    </form:update>
+</div>

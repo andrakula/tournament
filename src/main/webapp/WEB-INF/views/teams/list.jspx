@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_tournament_domain_Team" items="${teams}" z="N+HZ39GUdnAr/tY58fTHJ77ucPs=">
+        <table:table data="${teams}" id="l_tournament_domain_Team" path="/teams" z="B5+PKy5WylB4HPb/b9E7V4MmOsA=" update="false">
+            <table:column id="c_tournament_domain_Team_name" property="name" z="93cMkGxdxMgeUezdnTMBiAj6nfw="/>
+            <table:column id="c_tournament_domain_Team_games" property="games" z="TIfia5tj+gL3DEI8UwdfN/lRy90="/>
+            <table:column id="c_tournament_domain_Team_points" property="points" z="NmVsT0wk4Vrx7sZP5ZlR2SexijA="/>            
+        </table:table>
+    </page:list>
+    <table id="overview-teams-grid">
+				<jsp:text />
+	</table>
+	<div id="overview-teams-grid-pager"><jsp:text /></div>
+</div>
