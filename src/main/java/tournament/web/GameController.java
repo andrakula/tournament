@@ -123,8 +123,6 @@ public class GameController {
         uiModel.asMap().clear();
         
         gamesLogic.saveUndUpdate(game);
-        
-//        gameRepository.save(game);
         return "redirect:/games/" + encodeUrlPathSegment(game.getId().toString(), httpServletRequest);
     }
 
