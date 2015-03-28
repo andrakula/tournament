@@ -30,6 +30,7 @@ public class GamesLogic {
 			team2.setPoints(team2.getPoints()+1);
 		}
 		
+		
 		team1.setGames(team1.getGames()+1);
 		team2.setGames(team2.getGames()+1);
 		
